@@ -1,0 +1,8 @@
+Tests\VerifyLoginpageFunctionality_Test.class
+Tests\verifyMyInfoPage_Test.class
+Tests\verifyHomePage_Test.class
+Pages\HRMHomePage.class
+Pages\HRMMyinfoPage.class
+Utilities\readtestData.class
+Pages\HRMLoginPage.class
+Tests\BaseTest.class
