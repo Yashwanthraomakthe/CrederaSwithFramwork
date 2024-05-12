@@ -15,6 +15,11 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+
+					<systemPropertyVariables>
+						<browser>${BrowserName}</browser>
+					</systemPropertyVariables>
+
 				</configuration>
 			</plugin>
 			<plugin>
@@ -24,8 +29,6 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	
 
 
 	<dependencies>
