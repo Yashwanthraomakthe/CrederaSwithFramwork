@@ -27,7 +27,7 @@ public class HRMLoginPage {
 	@FindBy(xpath = "//button[normalize-space()='Login']")
 	public WebElement loginbutton;
 
-	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header000000000000000000']")
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
 	public WebElement forgotPassword;
 
 	public void LoginToHRM() throws InterruptedException {
