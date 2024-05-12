@@ -8,5 +8,6 @@
       <class name="Tests.BaseTest"/>
       <class name="Tests.verifyMyInfoPage_Test"/>
     </classes>
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->
