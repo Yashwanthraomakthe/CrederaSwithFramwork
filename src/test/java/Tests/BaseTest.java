@@ -24,7 +24,7 @@ public class BaseTest {
 
 	@BeforeMethod
 	@Step("Start the application")
-	@Parameters("browser")
+	@Parameters("BrowserName")
 	public void setup(String browserName) throws InterruptedException, IOException {
 
 		System.out.println("Parameter value is " + browserName);
