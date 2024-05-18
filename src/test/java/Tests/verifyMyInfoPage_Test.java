@@ -23,13 +23,15 @@ public class verifyMyInfoPage_Test extends BaseTest {
 	public void updatePersonalInfo_Test01() throws InterruptedException, IOException {
 		HRMLoginPage lg = new HRMLoginPage(driver);
 		lg.LoginToHRM();
+		Thread.sleep(1000);
 
 		HRMHomePage hp = new HRMHomePage(driver);
 		hp.clickMyinfo();
+		Thread.sleep(1000);
 
 		HRMMyinfoPage ip = new HRMMyinfoPage(driver);
 		ip.UpdateMyInfo();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		System.out.println("updatePersonalInfo_Test01 = Passed");
 
@@ -43,9 +45,11 @@ public class verifyMyInfoPage_Test extends BaseTest {
 	public void verifyMyinfoPanel_Test02() throws InterruptedException {
 		HRMLoginPage lg = new HRMLoginPage(driver);
 		lg.LoginToHRM();
+		Thread.sleep(1000);
 
 		HRMHomePage hp = new HRMHomePage(driver);
 		hp.clickMyinfo();
+		Thread.sleep(1000);
 
 		HRMMyinfoPage ip = new HRMMyinfoPage(driver);
 		ip.verifymyInfoPanel();
