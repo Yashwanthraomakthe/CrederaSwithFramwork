@@ -4,13 +4,6 @@
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="BrowserName" value="Edge"/>
     <classes>
-      <class name="Tests.verifyHomePage_Test">
-        <methods>
-          <include name="VerifyqucikLaunchOptions_Test01"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests.verifyHomePage_Test -->
       <class name="Tests.verifyMyInfoPage_Test">
         <methods>
           <include name="verifyMyinfoPanel_Test02"/>

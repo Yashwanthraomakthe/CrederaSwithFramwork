@@ -5,6 +5,12 @@
 	<groupId>Practic</groupId>
 	<artifactId>ProjectFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.targer>17</maven.compiler.targer>
+		<suiteFile>RegressionTestNg.xml</suiteFile>
+	</properties>
 
 	<build>
 		<plugins>
@@ -14,7 +20,8 @@
 				<version>3.2.5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>RegressionTestNg.xml</suiteXmlFile> -->
+						<suiteXmlFile>${RegressionTestNg}</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<systemPropertyVariables>
