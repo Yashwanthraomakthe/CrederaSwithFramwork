@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Suite" verbose="3">
 
 
@@ -18,3 +19,16 @@
 	Test -->
 </suite> <!--
 Suite -->
+=======
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Tests.verifyHomePage_Test"/>
+      <class name="Tests.VerifyLoginpageFunctionality_Test"/>
+      <class name="Tests.BaseTest"/>
+      <class name="Tests.verifyMyInfoPage_Test"/>
+    </classes>   
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+>>>>>>> d783e5a61d3ae3c511efbd50a171ce9bb2eeae86
