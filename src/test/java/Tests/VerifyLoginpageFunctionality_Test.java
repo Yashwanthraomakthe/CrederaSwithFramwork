@@ -2,6 +2,9 @@ package Tests;
 
 import org.testng.annotations.Test;
 
+import com.beust.jcommander.Parameter;
+import com.beust.jcommander.Parameters;
+
 import Pages.HRMLoginPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -11,8 +14,10 @@ import io.qameta.allure.Story;
 
 public class VerifyLoginpageFunctionality_Test extends BaseTest {
 
+	
+
 	@Severity(SeverityLevel.NORMAL)
-	@Test(priority = 0, description = "VerifyLogintoHRM")
+	@Test(priority = 0, description = "VerifyLogintoHRM")	
 	@Description("Test Description : VerifyLogintoHRM")
 	@Story("VerifyLogintoHRM")
 	@Step("VerifyLogintoHRM_Test01")
