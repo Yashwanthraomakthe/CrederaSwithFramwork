@@ -15,9 +15,9 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
-					<systemPropertyVariables>
+					<!--<systemPropertyVariables>
 						<browser>${BrowserName}</browser>
-					</systemPropertyVariables>
+					</systemPropertyVariables> -->
 
 				</configuration>
 			</plugin>

@@ -23,20 +23,20 @@ public class BaseTest {
 	public WebDriver driver;
 
 	@BeforeMethod
-	@Parameters("BrowserName")
+	// @Parameters("BrowserName")
 	@Step("Start the application")
-	public void setup(String browserName) throws InterruptedException, IOException {
+	public void setup() throws InterruptedException, IOException {
 
-		System.out.println("Parameter value is " + browserName);
-		
-		WebDriver driver = null;
-		if (browserName.contains("Chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-		} else if (browserName.contains("Edge")) {
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-		}
+		/*
+		 * System.out.println("Parameter value is " + browserName);
+		 * 
+		 * WebDriver driver = null; if (browserName.contains("Chrome")) {
+		 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver(); } else
+		 * if (browserName.contains("Edge")) { WebDriverManager.edgedriver().setup();
+		 * driver = new EdgeDriver(); }
+		 */
+
+		driver = new ChromeDriver();
 
 		driver.get(readtestData.getURL());
 		driver.manage().window().maximize();
