@@ -4,13 +4,29 @@
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="BrowserName" value="Edge"/>
     <classes>
+      <class name="Tests.verifyHomePage_Test">
+        <methods>
+          <include name="VerifyqucikLaunchOptions_Test01"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.verifyHomePage_Test -->
       <class name="Tests.verifyMyInfoPage_Test">
         <methods>
+          <include name="verifyMyinfoPanel_Test02"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="updatePersonalInfo_Test01"/>
         </methods>
       </class> <!-- Tests.verifyMyInfoPage_Test -->
+      <class name="Tests.VerifyLoginpageFunctionality_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="VerifyLogintoHRM_Test01"/>
+          <include name="Verifyforgotpassword_Test02"/>
+        </methods>
+      </class> <!-- Tests.VerifyLoginpageFunctionality_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
